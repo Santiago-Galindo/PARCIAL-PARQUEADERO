@@ -1,0 +1,71 @@
+# Sistema de Parqueadero en C++
+
+# Descripción
+Este programa simula un sistema de parqueadero desarrollado en C++, el cual permite gestionar el ingreso y salida de vehículos, controlar usuarios, calcular pagos automáticamente según el tiempo de permanencia y almacenar un historial de uso.
+
+# Funcionalidades
+- Registro de vehículos (carro o moto)
+- Asignación automática de espacios
+- Visualización del mapa del parqueadero
+- Cálculo automático del tiempo y pago
+- Sistema de calificación con descuento del 10%
+- Creación y gestión de usuarios
+- Guardado de historial en archivo
+
+# Tarifas
+- **Carro:** $100 por minuto  
+- **Moto:** $50 por minuto  
+-  Descuento del 10% si la calificación es mayor o igual a 3
+
+# Tipos de usuario
+
+# Administrador
+Acceso con credenciales;
+
+Opciones:
+- Ingresar vehículo
+- Ver mapa
+- Retirar vehículo
+- Ver historial
+
+# Usuario
+Opciones:
+- Ingresar vehículo
+- Ver mapa
+- Retirar vehículo
+
+# Mapa del parqueadero
+
+| Símbolo | Significado |
+|--------|------------|
+| `E` | Entrada |
+| `S` | Salida |
+| `-` | Espacio libre |
+| `O` | Espacio ocupado |
+| `#` | Límite |
+
+---
+
+# Flujo del programa
+1. El usuario selecciona una opción del menú principal  
+2. Puede ingresar como administrador o usuario 
+3. solo el administrador puede ingresar un vehiculo 
+4. si no posee una cuenta de administrador seleccione la opcion "crear"
+5. Realiza acciones como ingresar, consultar o retirar vehículos  
+6. Al retirar un vehículo:
+   - Se calcula el tiempo
+   - Se genera el pago
+   - Se solicita una calificación
+   - Se guarda en el historial
+
+# Cómo ejecutar el programa
+
+# Requisitos
+- Tener instalado un compilador de C++ (g++)
+- Sistema operativo Windows
+
+# Compilar
+Abrir la terminal en VS Code y ejecutar:
+
+"g++ main.cpp -o parqueadero"
+"./parqueadero"
